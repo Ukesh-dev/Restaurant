@@ -1,0 +1,41 @@
+
+
+//header-height
+$header-height: 3rem;
+
+//colors
+$first-color:  #ff0022;
+$first-color-alt:  #c50e27;
+$header-color: #f8e9f2;
+$title-color: #393939;
+$text-color: #707070;
+$text-color-light: #A6A6A6;
+$body-color: #edfdfb;
+$container-color: #ffffffff;
+
+:root{
+    --first-color: #{$first-color};
+    --first-color-alt: #{$first-color-alt};
+    --container-color: #{$container-color};
+    --header-color: #{$header-color};
+    --title-color: #{$title-color};
+    --text-color: #{$title-color};
+    --body-color: #{$body-color};
+    --container-color: #{$container-color};
+}
+
+
+
+body.dark-theme{
+  
+    --first-color: #ff0022;
+    --first-color-alt: #{$first-color-alt};
+    --header-color: #1d251d;
+    --title-color: #f1f2f3;
+    --text-color: #c7d1cc;
+    --body-color: #1d2521;
+    --container-color: #1d251d;
+  
+
+}
+

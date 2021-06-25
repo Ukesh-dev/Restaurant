@@ -1,0 +1,50 @@
+.app{
+    &__container{
+          
+        gap: .5rem;
+        @include breakpoint-up(small){
+            // column-gap: 3rem;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: initial;
+            
+            .section-title, .section-subtitle{
+                text-align: initial;
+
+            }
+
+        }
+    }
+
+    text-align: center;
+    &__stores{
+        margin: 0 0 .5rem;
+        
+        
+        
+        .app__store{
+            width: 120px;
+            margin: .9rem;
+            @include breakpoint-up(small){
+                margin: 0;
+            }
+            
+    
+        }
+    }
+    &__image{
+        width: 240px;
+        justify-self: center;
+        border-radius: 18px;
+        overflow: hidden;
+
+        @include breakpoint-up(small){
+            order: -1;
+        }
+
+        @include breakpoint-up(medium){
+            // width: 380px;
+            column-gap: .5rem;
+        }
+        
+    }
+}

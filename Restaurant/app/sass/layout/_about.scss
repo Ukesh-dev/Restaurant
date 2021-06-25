@@ -1,0 +1,44 @@
+
+.about{
+    // padding: 0;
+    background: var(--body-color);
+    &__container{
+          
+        @include breakpoint-up(small){
+           
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+    &__data{
+        text-align: center;
+       
+
+        @include breakpoint-down(medium){
+            & .section-title{
+                font-size: 1.9rem;
+                
+            }
+
+        }
+
+    }
+    &__description{
+
+        // margin-bottom: 2rem;
+    }
+    &__img{
+        width: 250px;
+        border-radius: .5rem;
+        justify-self: center;
+        align-self: center;
+
+        @include breakpoint-up(small){
+            // width: 0px;
+            order: -1;
+        }
+        @include breakpoint-up(medium){
+            width: 380px;
+        }
+    }
+}

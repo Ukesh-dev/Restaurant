@@ -1,0 +1,23 @@
+
+.contact{
+
+    &__container{
+        text-align: center;
+        @include breakpoint-up(small){
+            text-align: initial;
+            grid-template-columns: 1.75fr 1fr;
+            align-items: center;
+            
+            .section-title, .section-subtitle{
+                text-align: initial;
+
+            }
+
+        }
+        
+    }
+    &__description{
+        margin-bottom: 1.5rem;
+    }
+
+}

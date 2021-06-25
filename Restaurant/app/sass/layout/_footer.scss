@@ -1,0 +1,42 @@
+.footer{
+    background: var(--header-color);
+    &__container{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        row-gap: 2rem;
+    }
+    &__logo h3{
+        color:var(--first-color);
+        font-weight: 600; 
+        margin-top: 1.5rem;
+        margin-bottom: .5rem;
+    }
+    &__description h4{
+        // display: block;
+        margin: .25rem 0 1.5rem;
+    }
+    &__social{
+        font-size: 1.5rem;
+        color: var(--title-color);
+        margin-right: 1.2rem;
+        
+    }
+    &__title{
+        color: var(--title-color);
+        margin-top: 1rem;
+    }
+    &__link{
+        color: var(--text-color);
+        transition: .5s;
+    }
+
+    &__link:hover{
+        color: var(--first-color);
+        padding-left: .5rem;
+    }
+    &__copy{
+        text-align: center;
+        font-size: .833rem;
+        color: var(--text-color);
+        margin-top:3.5rem;
+    }
+}

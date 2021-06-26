@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==' crossorigin='anonymous'/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-     <link rel="stylesheet" href="./dist/css/style.css">
+     <!-- <link rel="stylesheet" href="./dist/css/loader.css"> -->
     <title>Pine & Dine</title>
 
 </head>
-<body onload='loadFunc()'>
-    <div id="loading"></div>
-   <!-- HEADER -->
+<body onload= loading()  class ='scrollable'>
+    <div class="loading-container">
+    <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+    
+    <!-- HEADER -->
    <div class="scroll__top nav__link">
        <a href="#"><i class="fas fa-chevron-up"></i></a>
 
@@ -43,7 +54,7 @@
    <main class="l-main">
        <section class="home container"  id="home">
            <div class="home__container grid">
-               <div class="home__data" data-aos="fade-down">
+               <div class="home__data" data-aos="zoom-in" >
                    <h1 class="home__title">Tasty Food</h1>
                    <h3 class="home__subtitle">
                        Try the best food of <br> the week. 
@@ -51,7 +62,7 @@
                    <a href="#" class="button">View Menu</a>
                </div>
              
-                   <img src="/img/pexels-roman-odintsov-4551971.jpg" alt="hero" class="home__img" data-aos="fade-down">
+                   <img src="/img/pexels-roman-odintsov-4551971.jpg" alt="hero" class="home__img" data-aos="zoom-in" >
 
              
            </div>
@@ -487,6 +498,7 @@
        </div>
        <p class="footer__copy">&#169; 2020 Ukesh. All Rights Reserved.</p>
    </footer>
+
 
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script>

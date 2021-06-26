@@ -2,37 +2,22 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-
-  transition: background-color 1.5s ease;
+  
+  
+  transition: background-color 1.5s ease, opacity 1.5s ease;
 }
-#loading{
-  position: fixed;
-  top: calc(-#{$header-height});
-  left: 0;
-  width: 100%;
-  height:calc(100vh + #{$header-height});
-  background: #fff 
-  url('/img/Wedges-3s-200px.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1000;
-  // overflow: hidden;
+body{
+  overflow-x: hidden;
+}
+body.scrollable{
 
-
+  overflow: hidden;
 }
 
 html{
   scroll-behavior: smooth;
 }
 
-body{
-  margin: $header-height 0 0 0;
-  background-color: var(--body-color);
-  color: var(--text-color);
-  overflow-x: hidden;
-  
-}
 ul{
   padding: 0;
   list-style: none;
@@ -90,3 +75,4 @@ section, footer{
   display: block;
   color: var(--first-color);
 }
+

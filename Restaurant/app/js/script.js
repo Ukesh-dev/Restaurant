@@ -1,5 +1,3 @@
-
-
 AOS.init({
   once: true,
   duration : 1000,
@@ -13,28 +11,29 @@ const scrollTop = document.querySelector('.scroll__top');
 console.log(section);
 const navLink = document.querySelectorAll('.nav__link');
 const darkTheme = document.querySelector(".toggle__container")
-let preloader = document.getElementById("loading");
-
-
-
-function loadFunc(){
-  // setTimeout(() => {
-    preloader.style.display= 'none';
-  
-
-  // },10000)
-}
+const loader = document.querySelector(".loading-container");
+const main = document.querySelector('.main-content');
 
 window.addEventListener("scroll", scrollActive)
 
+
+function loading(){
+// setTimeout(()=> {
+  loader.style.opacity = '0';
+  loader.style.display = 'none';
+  document.body.classList.remove('scrollable');
+// },4000)
+}
 
 
 const setTheme= () => {
 
   if(mode == 'dark-Theme'){
+    darkTheme.classList.remove('show');
     document.body.classList.add('dark-theme');
   }
   else{
+    darkTheme.classList.add('show')
     document.body.classList.add('light-theme');
   }
 }

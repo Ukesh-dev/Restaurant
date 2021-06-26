@@ -5,7 +5,8 @@ main{
 
 }
 .home {
-    padding: 0;
+    // padding: 0;
+    // overflow: hidden;
     @include breakpoint-down(medium){
         padding: 3rem 0 0;
     }
@@ -14,10 +15,12 @@ main{
         align-content: center;
         gap: .5rem;
         color: $text-color;
-        
        
+        
+        
         @include breakpoint-up(medium){
-            height: 100vh;
+            padding-top: 4rem;
+            height: 70vh;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
         }

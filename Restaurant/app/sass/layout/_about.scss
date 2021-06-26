@@ -1,6 +1,6 @@
 
 .about{
-    // padding: 0;
+    padding-top: 5rem;
     background: var(--body-color);
     &__container{
           
@@ -23,10 +23,7 @@
         }
 
     }
-    &__description{
-
-        // margin-bottom: 2rem;
-    }
+  
     &__img{
         width: 250px;
         border-radius: .5rem;

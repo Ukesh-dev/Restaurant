@@ -602,7 +602,13 @@ main {
 .home__title {
   font-weight: 600;
   color: #ff0022;
-  font-size: 2.802rem;
+  font-size: 2.1rem;
+}
+
+@media (min-width: 768px) {
+  .home__title {
+    font-size: 2.802rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -614,6 +620,12 @@ main {
 .home__subtitle {
   margin-top: 0;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 39.9375em) {
+  .home__subtitle {
+    font-size: 1.9rem;
+  }
 }
 
 .home__img {
